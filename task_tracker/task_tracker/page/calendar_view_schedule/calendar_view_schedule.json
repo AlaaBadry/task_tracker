@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2021-06-21 20:14:58.543204",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-06-21 20:14:58.543204",
+ "modified_by": "Administrator",
+ "module": "Task Tracker",
+ "name": "calendar-view-schedule",
+ "owner": "Administrator",
+ "page_name": "Calendar View Schedule",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Calendar View Schedule"
+}

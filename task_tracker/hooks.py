@@ -172,4 +172,20 @@ user_data_fields = [
 # auth_hooks = [
 # 	"task_tracker.auth.validate"
 # ]
+fixtures = ['Custom Field','Property Setter','Print Format','Role','Email Template']
+doctype_js = {"Task" : "task_tracker/custom/js/task.js",
+			"Project": "task_tracker/custom/js/project.js"}
 
+doctype_list_js = {"Task" : "task_tracker/custom/js/task_list.js"}
+
+
+doc_events = {
+	"Project": {
+		"validate": "task_tracker.custom.py.project.validate"
+	},
+	"Task": {
+		"validate": "task_tracker.custom.py.task.validate",
+		"on_trash": "task_tracker.custom.py.task.on_trash",
+		"after_insert":"task_tracker.custom.py.task.after_insert"
+	}
+}
