@@ -961,22 +961,6 @@
  },
  {
   "default_value": null,
-  "doc_type": "Contact",
-  "docstatus": 0,
-  "doctype": "Property Setter",
-  "doctype_or_field": "DocField",
-  "field_name": "mobile_no",
-  "modified": "2020-12-06 14:06:47.648917",
-  "name": "Contact-mobile_no-unique",
-  "parent": null,
-  "parentfield": null,
-  "parenttype": null,
-  "property": "unique",
-  "property_type": "Check",
-  "value": "1"
- },
- {
-  "default_value": null,
   "doc_type": "Lead",
   "docstatus": 0,
   "doctype": "Property Setter",
