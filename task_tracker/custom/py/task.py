@@ -15,7 +15,7 @@ def validate(doc, method):
 		if frappe.db.get_value("Project Task", {'subject':doc.subject}, 'name'):
 			task_doc = frappe.get_doc("Project Task", {'subject':doc.subject})
 			task_doc.subject = doc.subject
-			task_doc.complated_by = doc.completed_by
+			task_doc.completed_by = doc.completed_by
 			task_doc.caliber = doc.caliber
 			task_doc.expected_start_date = doc.exp_start_date
 			task_doc.expected_end_date =doc.exp_end_date
@@ -34,7 +34,7 @@ def after_insert(doc,method):
 	if not frappe.flags.from_project_insert:
 		project_doc  = frappe.get_doc("Project",doc.project)
 		project_doc.append('task', {"subject":doc.subject,
-									"complated_by":doc.completed_by,
+									"completed_by":doc.completed_by,
 									"caliber":doc.caliber,
 									"exp_start_date":doc.exp_start_date,
 									"exp_end_date":doc.exp_end_date,

@@ -43,7 +43,7 @@ def add_task(doc, method, to_add):
 			t_doc = t_doc[0]
 			task_doc = frappe.new_doc("Task")
 			task_doc.subject = t_doc.subject
-			task_doc.completed_by = t_doc.complated_by
+			task_doc.completed_by = t_doc.completed_by
 			task_doc.caliber = t_doc.caliber
 			task_doc.exp_start_date = t_doc.expected_start_date
 			task_doc.exp_end_date =t_doc.expected_end_date
@@ -74,8 +74,8 @@ def task_updated(doc, method):
 																"exp_end_date","color"],as_dict=1)
 
 		modified_dict ={}
-		if row.complated_by and row.complated_by != values.get("completed_by"):
-			modified_dict['completed_by'] = row.complated_by
+		if row.completed_by and row.completed_by != values.get("completed_by"):
+			modified_dict['completed_by'] = row.completed_by
 		
 		if row.caliber and row.caliber != values.get("caliber"):
 			modified_dict['caliber'] = row.caliber
