@@ -125,8 +125,8 @@
 			{% endfor %}
       	</tr>
       	<tr>
-	        <th class="fixed ta " style="background-color:#ff9899">Project</th>
 			<th class="fixed header2  fw" style="background-color:#ff9899">Caliber</th>
+			<th class="fixed ta " style="background-color:#ff9899">Project</th>
       	</tr>
     </thead>
     <tbody>
@@ -136,8 +136,9 @@
 		<tr  style="text-align:center" >
 
 
-			<td class="fixed ta color"><b>{{d["project"]}}</b></td>
+
 			<td class="fixed header2 color fw1"><b>{{d["caliber"]}}</b></td>
+			<td class="fixed ta color"><b>{{d["project"]}}</b></td>
 
 			<td class="ta assign_task dbclick" style="background-color:{{d["Sunday"]["color"]}}" 
 				task_name="{{d["Sunday"]["task_name"]}}" caliber_user="{{d["caliber_user"]}}" >
