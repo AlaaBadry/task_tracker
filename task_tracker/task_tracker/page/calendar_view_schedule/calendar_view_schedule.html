@@ -40,7 +40,7 @@
 
 	.fixed {
 		position: sticky;
-		width: 5em;
+		width: 15em;
 		left: 0;
 		top: auto;
 		z-index: 2;
@@ -52,7 +52,7 @@
 		
 	.ta{
 		text-align: center;
-		width:12.5%;
+		width: 150px;
 		word-wrap: break-word;
 	}
 	.header2 {
@@ -124,7 +124,7 @@
 			{% endfor %}
       	</tr>
       	<tr>
-			<th class="fixed ta" style="background-color:#ff9899">Caliber</th>
+			<th class="fixed header2" style="background-color:#ff9899">Caliber</th>
 			<th class="fixed header2" style="background-color:#ff9899">Project</th>
       	</tr>
     </thead>
@@ -136,8 +136,8 @@
 
 
 
-			<td class="fixed ta color"><b>{{d["caliber"]}}</b></td>
-			<td class="fixed header2 color"><b>{{d["project"]}}</b></td>
+			<td class="color"><b>{{d["caliber"]}}</b></td>
+			<td class="header2 color"><b>{{d["project"]}}</b></td>
 
 			<td class="ta assign_task dbclick" style="background-color:{{d["Sunday"]["color"]}}" 
 				task_name="{{d["Sunday"]["task_name"]}}" caliber_user="{{d["caliber_user"]}}" >
